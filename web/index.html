@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d13">
+  <title>Neon Lane — Car Dodge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="logo"><span class="logo-icon">✦</span><span>NEON<span class="logo-light">LANE</span></span></div>
+      <div class="live"><i></i> ARCADE MODE</div>
+    </header>
+
+    <section class="game-layout" aria-label="Neon Lane car dodge game">
+      <div class="intro">
+        <p class="kicker">ONE ROAD. ENDLESS TRAFFIC.</p>
+        <h1>NEON<br><span>LANE</span></h1>
+        <p class="description">Dodge the traffic. Keep your streak alive.<br>How long can you last?</p>
+        <div class="score-row">
+          <div class="score-box"><span class="label">SCORE</span><strong id="score">0000</strong></div>
+          <div class="score-box best"><span class="label">BEST</span><strong id="best">0000</strong></div>
+        </div>
+        <div class="controls-note"><span class="key">←</span><span class="key">→</span><span>or</span><kbd>A</kbd><kbd>D</kbd><span>to switch lanes</span></div>
+        <p class="mobile-note">On phone? Tap the left and right buttons under the road.</p>
+      </div>
+
+      <div class="cabinet">
+        <div class="cabinet-top"><span><i></i> CITY LOOP / 01</span><span id="status">READY</span></div>
+        <div class="screen">
+          <canvas id="game" width="480" height="640" aria-label="Road game. Avoid the other cars and increase your score."></canvas>
+          <div id="overlay" class="overlay">
+            <div class="overlay-card">
+              <span id="overlay-tag" class="overlay-tag">NIGHT SHIFT</span>
+              <h2 id="overlay-title">Ready to<br>drive?</h2>
+              <p id="overlay-copy">Switch lanes to dodge traffic.<br>Your score rises as you survive.</p>
+              <button id="start" class="start-button">START ENGINE <span>↗</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-controls" aria-label="Driving controls">
+          <button id="left" aria-label="Move left">←</button>
+          <span>SWITCH LANES</span>
+          <button id="right" aria-label="Move right">→</button>
+        </div>
+        <div class="cabinet-bottom"><span>WATCH THE ROAD</span><span>▲▲▲</span></div>
+      </div>
+    </section>
+    <footer><span>NEON LANE <b>•</b> MINI ARCADE</span><span>ONE CRASH ENDS THE RUN</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
